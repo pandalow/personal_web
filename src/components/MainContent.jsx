@@ -1,17 +1,12 @@
+// MainContent.js
 import React from 'react';
-import "../App.css"
 import Chatbot from './ChatBot';
-import Projects from './Projects';
-import Contact from './Contact';
-import Resume from './Resume';
+import AboutMe from './AboutMe';
 
-function MainContent() {
+function MainContent({ currentPage }) {
   return (
-    <div className="main-content">
-      <Chatbot />
-      <Projects />
-      <Resume />
-      <Contact />
+    <div className="space-y-6">
+      {currentPage === 'chatbot' ? <Chatbot /> : <AboutMe />}
     </div>
   );
 }

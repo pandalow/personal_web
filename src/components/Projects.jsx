@@ -1,22 +1,26 @@
 import Project from "./Project";
+import projectList from "../contents/protfolio.json";
 
 export default function Projects() {
-    const projectList = [
-      { title: "Neon Warrior", description: "A cyberpunk pixel art game" },
-      { title: "Future City", description: "A 3D cyberpunk city simulation" },
-      { title: "AI Companion", description: "An intelligent chatbot assistant" }
-    ];
-  
-    return (
-      <section class='nes-container with-title is-centered'>
-        <h2 class='nes-text is-primary'>Portfolio</h2>
-        <div className="project-list">
+  return (
+    <section className="nes-container with-title text-center p-6">
+      <h2 className="title text-xl font-bold">Portfolio</h2>
+
+      {/* 横向滑动 */}
+      <div className="overflow-x-auto">
+        <div className="flex space-x-6 p-4">
           {projectList.map((proj, index) => (
-            <Project key={index} title={proj.title} description={proj.description} />
+            <Project 
+              key={index} 
+              title={proj.title} 
+              description={proj.description} 
+              githubLink={proj.githubLink} 
+              image={proj.image} 
+              logo={proj.logo} 
+            />
           ))}
         </div>
-      </section>
-    );
-  }
-
-
+      </div>
+    </section>
+  );
+}

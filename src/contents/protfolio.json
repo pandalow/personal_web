@@ -1,0 +1,22 @@
+ [{
+         "title": "Course Hunter",
+         "description": "a full-stack web application that allows students to browse university courses, view ratings, and get detailed course information.",
+         "githubLink": "https://github.com/pandalow/CourseHunter",
+         "image": "coursehunter.png",
+         "logo": "coursehunter.png"
+     },
+     {
+         "title": "Othello",
+         "description": "A simple Othello game built on react and springboot , support for two-player local battles , but also support and simple computer games .",
+         "githubLink": "https://github.com/pandalow/Othello",
+         "image": "othello.png",
+         "logo": "othello.png"
+     },
+     {
+         "title": "PanEMO",
+         "description": "The emo detectation of semeval 2025 task 11",
+         "githubLink": "https://github.com/pandalow/PanEMO",
+         "image": "panemo.png",
+         "logo": "panemo.png"
+     }
+ ]
