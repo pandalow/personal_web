@@ -4,23 +4,21 @@ function Resume() {
   return (
     <div className="w-full ">
       {/* Summary Section */}
-      <section className="nes-container with-title is-centered mb-6">
-        <h2 className="title text-lg font-bold">Summary</h2>
+      <section className="nes-container with-title is-left mb-6">
+        <h2 className="title text-lg font-bold flex items-center gap-2"><i className="nes-icon trophy"></i><i>Summary</i></h2>
         <div>
           <p className="text-gray-700">{resume.summary}</p>
         </div>
       </section>
 
       {/* Strength & Skills Section */}
-      <section className="nes-container with-title is-centered mb-6">
-        <h2 className="title text-lg font-bold">Strength & Skills</h2>
-        <div className="mt-3">
-          <ul className="list-disc list-inside space-y-2 text-gray-700">
+      <section className="nes-container with-title is-left mb-6">
+        <h2 className="title text-lg font-bold flex items-center gap-2"><i className="nes-icon coin"></i><i>Strength & Skills</i></h2>
+        <div className="flex flex-wrap gap-2 mt-3">
             {resume.strength_skills.map((skill, index) => (
-              <li key={index} className="text-md">{skill}</li>
+              <h4 key={index} className="text-md">{skill} /</h4>
             ))}
-          </ul>
-        </div>
+        </div> 
       </section>
 
       {/* Experience Section */}

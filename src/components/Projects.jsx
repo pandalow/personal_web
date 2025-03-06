@@ -3,7 +3,7 @@ import projectList from "../contents/protfolio.json";
 
 export default function Projects() {
   return (
-    <section className="nes-container with-title text-center p-6">
+    <section className="nes-container with-title text-center p-6 mt-6 mb-6">
       <h2 className="title text-xl font-bold">Portfolio</h2>
 
       {/* 横向滑动 */}

@@ -16,7 +16,7 @@ function Project({ title, description, githubLink, image, logo }) {
       <p className="text-gray-600 text-sm mt-2">{description}</p>
 
       {/* GitHub 按钮 */}
-      <a href={githubLink} className="nes-btn is-primary mt-4">GitHub</a>
+      <a href={githubLink} className="nes-btn mt-4">GitHub</a>
     </div>
   );
 }

@@ -14,7 +14,7 @@ function App() {
         <Sidebar setCurrentPage={setCurrentPage} />
       </div>
       {/* 主内容部分 */}
-      <div className="w-2/3 bg-gray-100 p-6">
+      <div className="w-2/3  p-6">
         <MainContent currentPage={currentPage} />
       </div>
     </div>
