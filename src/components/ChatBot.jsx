@@ -39,12 +39,15 @@ function Chatbot() {
 
   return (
     <section className="nes-container with-title is-centered h- flex flex-col flex-grow w-full h-full p-6 bg-white shadow-md rounded-lg">
-      <h2 className="title text-lg font-bold">Chatbot</h2>
+      <h2 className="title text-lg font-bold">Talk to My Agent</h2>
 
       {/* 聊天记录 */}
       <div className="flex-grow overflow-y-auto p-4 border border-gray-300 bg-gray-100 rounded-lg mb-4 shadow-sm">
         {messages.length === 0 ? (
-          <p className="text-gray-500 text-sm text-center">Start the conversation...</p>
+          <p className="text-gray-500 text-sm text-center flex items-center justify-center gap-2">
+            <i class="nes-octocat animate"></i>
+            In Construction...
+            </p>
         ) : (
           messages.map((msg, index) => (
             <div
@@ -69,7 +72,7 @@ function Chatbot() {
       <div className="flex items-center gap-3">
         <textarea
           placeholder="Type your message..."
-          className="nes-textarea w-full p-3 border border-gray-400 rounded-md focus:outline-none focus:border-blue-500 transition"
+          className="w-full p-3 border border-gray-400 rounded-md focus:outline-none focus:border-blue-500 transition"
           value={input}
           onChange={(e) => setInput(e.target.value)}
           disabled={loading}

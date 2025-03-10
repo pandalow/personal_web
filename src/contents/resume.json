@@ -26,6 +26,7 @@
         "company": "University of Galway",
         "location": "Ireland, Galway",
         "duration": "Sep 2024 - Present",
+        "image": "galway.png",
         "responsibilities": [
           "Mentoring: Assisted in teaching and mentoring 60+ students in Java programming, web development (HTML, CSS, JavaScript), and web frameworks (Spring, Servlets).",
           "Assessment: Optimized course delivery and student satisfaction, resulting in positive feedback from students and faculty, by facilitating over 200 coding exercises."
