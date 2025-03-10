@@ -52,6 +52,14 @@ function Sidebar({ setCurrentPage }) {
               About Me
             </button>
           </li>
+          <li>
+            <button 
+              onClick={() => setCurrentPage('portfolio')}
+              className="w-full py-2 px-4 rounded-lg bg-gray-700 hover:bg-gray-600 transition"
+            >
+              Portfolio
+            </button>
+          </li>
         </ul>
       </nav>
     </div>

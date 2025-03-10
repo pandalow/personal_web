@@ -2,7 +2,7 @@ import resume from "../contents/resume.json";
 
 function Resume() {
   return (
-    <div className="w-full ">
+    <div className="w-full">
       {/* Summary Section */}
       <section className="nes-container with-title is-left mb-6">
         <h2 className="title text-lg font-bold flex items-center gap-2"><i className="nes-icon trophy"></i><i>Summary</i></h2>
@@ -22,19 +22,58 @@ function Resume() {
       </section>
 
       {/* Experience Section */}
-      <section className="nes-container with-title is-centered">
-        <h2 className="title text-lg font-bold">Experience</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-3">
-          {resume.experience.map((exp, index) => (
-            <div key={index} className="nes-container p-4 rounded-lg shadow-md">
-              <h4 className="text-md font-bold">{exp.title}</h4>
-              <p className="text-gray-600">{exp.company}</p>
-              <p className="text-gray-500 text-sm">{exp.location}</p>
-              <p className="text-gray-400 text-sm">{exp.duration}</p>
-            </div>
-          ))}
+{/* Experience Section */}
+<section className="nes-container with-title is-left mb-6">
+  <h2 className="title text-lg font-bold">Experience</h2>
+  <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mt-3">
+    {resume.experience.map((exp, index) => (
+      <div key={index} className="p-4">
+        <div className="grid grid-cols-2 items-center">
+          <h4 className="text-md font-bold text-left">{exp.title}</h4>
+          <p className="text-gray-600 text-right">{exp.company}</p>
         </div>
-      </section>
+
+        <div className="grid grid-cols-2 items-center mt-2">
+          <p className="text-gray-500 text-sm text-left">{exp.location}</p>
+          <p className="text-gray-400 text-sm text-right">{exp.duration}</p>
+        </div>
+
+        <p className="text-gray-800 text-sm mt-3">{exp.responsibilities}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
+<section className="nes-container with-title is-left mb-6">
+  <h2 className="title text-lg font-bold">Education</h2>
+
+  <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mt-3">
+    {resume.education.map((edu, index) => (
+      <div key={index}>
+        <div className="grid grid-cols-2 items-center">
+          <h4 className="text-md font-bold text-left">{edu.degree}</h4>
+          <p className="text-gray-600 text-right">{edu.university}</p>
+        </div>
+        <p className="text-gray-400 text-sm text-right">{edu.location}</p>
+        <p className="text-gray-400 text-sm text-right">{edu.duration}</p>
+      </div>
+    ))}
+  </div>
+</section>
+<section className="nes-container with-title is-left">
+  <h2 className="title text-lg font-bold">Certifications</h2>
+  <div className="grid grid-cols-1 md:grid-cols-1 gap-6 mt-3">
+    {resume.certifications.map((cert, index) => (
+      <div key={index}>
+        <div className="grid grid-cols-2 items-center">
+          <h4 className="text-md font-bold text-left">{cert.name}</h4>
+          <p className="text-gray-600 text-right">{cert.issuer}</p>
+        </div>
+        <p className="text-gray-400 text-sm text-right">{cert.year}</p>
+      </div>
+    ))}
+  </div>
+</section>
     </div>
   );
 }

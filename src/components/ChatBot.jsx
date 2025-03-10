@@ -38,7 +38,7 @@ function Chatbot() {
   };
 
   return (
-    <section className="nes-container with-title is-centered flex flex-col flex-grow w-full h-full p-6 bg-white shadow-md rounded-lg">
+    <section className="nes-container with-title is-centered h- flex flex-col flex-grow w-full h-full p-6 bg-white shadow-md rounded-lg">
       <h2 className="title text-lg font-bold">Chatbot</h2>
 
       {/* 聊天记录 */}

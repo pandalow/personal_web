@@ -8,13 +8,13 @@ function App() {
 
   return (
     // 外层容器不再使用 h-screen，而是让高度自适应内容
-    <div className="flex m-8 items-stretch">
+    <div className="flex m-8 justify-center h-full">
       {/* 侧边栏部分 */}
-      <div className="w-1/3 bg-blue-950 text-white p-6">
+      <div className="w-1/4 bg-blue-950 text-white p-6">
         <Sidebar setCurrentPage={setCurrentPage} />
       </div>
       {/* 主内容部分 */}
-      <div className="w-2/3  p-6">
+      <div className="w-3/4  p-6">
         <MainContent currentPage={currentPage} />
       </div>
     </div>

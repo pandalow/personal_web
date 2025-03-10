@@ -35,6 +35,8 @@
         "title": "Technical Product Manager",
         "company": "Meituan",
         "location": "China, Beijing",
+        "duration": "Sep 2022 - Sep 2023",
+        "image": "meituan.png",
         "responsibilities": [
           "Notification System: Design a multi-channel SMS, IVR, and Toast Notifications System with integrated services for seamless communication. The distributed architecture enabling dynamic message distribution based on user preferences, priorities, and load balancing.",
           "Recommendation system: Orchestrated the design of an efficient marketing recommendation system leveraging model-based collaborative filtering.",
@@ -46,6 +48,9 @@
       {
         "title": "Senior Product Manager",
         "company": "Alibaba Group",
+        "location": "China, Beijing",
+        "duration": "Sep 2018 - Sep 2022",
+        "image": "alibaba.png",
         "responsibilities": [
           "Native development: Design and development the rule-based full stack home page module, achieving a 50% UV conversion rate and driving 70% of site consumption.",
           "Component management: Conducted comprehensive A/B testing and component style management, in collaboration with recommendation and operations teams.",
@@ -56,6 +61,8 @@
         "title": "Product Manager",
         "company": "ByteDance",
         "location": "China, Beijing",
+        "duration": "Sep 2015 - Sep 2018",
+        "image": "bytedance.png",
         "responsibilities": [
           "Push recommendation: Directed the overall product strategy for push notifications system, achieving a 50% increase in click-through rates."
         ]
