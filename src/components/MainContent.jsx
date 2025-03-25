@@ -21,7 +21,10 @@ function MainContent({ currentPage }) {
         animate="visible"
         exit="exit"
               >
-        {currentPage === "chatbot" && <Chatbot />}
+
+        {currentPage === "chatbot" && <div className="min-h-screen flex">
+                            <Chatbot />
+                          </div>}
         {currentPage === "aboutMe" && <AboutMe />}
         {currentPage === "portfolio" && <Portfolio />}
       </motion.div>

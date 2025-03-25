@@ -1,0 +1,47 @@
+[
+    {
+      "title": "Course Hunter",
+     "description": [
+    "Course Hunter is a full-stack web application that allows students to browse university courses, view ratings, and get detailed course information.",
+    "📡 Backend: Built with Spring Boot, providing RESTful APIs for course management, user authentication, and ratings.",
+    "🖥️ Frontend: Developed with React (Vite) and Tailwind CSS, offering a modern and responsive user interface.",
+    "⚡ Database & Caching: MySQL for relational data, Redis for fast caching.",
+    "🔐 Security: Uses Spring Security and JWT for authentication."
+  ],
+      "languages": "Java, JavaScript",
+      "Framework":"Spring, React, MySQL",
+      "githubLink": "https://github.com/pandalow/course_hunter",
+      "image": "course_hunter.png"
+    },
+    {
+      "title": "Othello",
+      "description": [
+        "This is a simple Othello game built with React and Spring Boot. It supports both two-player local matches and games against a basic computer opponent.",
+        "The frontend leverages extensive state management techniques, with BoardContext being utilized to efficiently manage the overall state of the application.",
+        "On the backend, there's no database involvement; instead, the game logic is powered by the MiniMax algorithm with alpha-beta pruning, providing a straightforward AI opponent for single-player games."
+      ],
+      "githubLink": "https://github.com/pandalow/Othello",
+      "languages": "JavaScript",
+      "image": "othello.jpeg"
+    },
+    {
+        "title": "simple search",
+        "description": [
+            "This is an extremely simple search engine built with Spotify Annoy and SBERT Embeddings. It is designed for fast similarity search and is implemented using FastAPI.",
+            "Embedding Model: SBERT Model: all-mpnet-base-v2 from Sentence Transformers",
+            "Embedding Dimension: 768",
+            "Indexing Library: Annoy (Approximate Nearest Neighbors)"
+        ],
+        "githubLink": "https://github.com/pandalow/ex-simple-search",
+        "languages": "Python",
+        "Framework": "fastapi, annoy, sentence-transformers"
+    },
+    {
+      "title": "PanEMO",
+      "description": "Emotion detection system for SemEval 2025 Task 11.",
+      "githubLink": "https://github.com/pandalow/PanEMO",
+      "languages": "Python",
+      "Framework": "huggingface, transformers, torch, pandas, numpy, sklearn"
+    }
+  ]
+  

@@ -13,24 +13,22 @@ function Sidebar({ setCurrentPage }) {
           className="mx-auto"
           style={{ imageRendering: "pixelated" }}
         />
-        <h1 className="nes-text is-primary text-md mt-2">X.Zhuang</h1>
+        <h1 className="text-2xl mt-2 text-blue-500 whitespace-normal break-words">X.Zhuang</h1>
      
         <p className="text-lg text-gray-100 mt-2">
-          Software Engineer & Product Manager
+          Software Developer
         </p>
-        <p className="text-gray-100 text-sm">zxj000hugh@gmail.com</p>
-        <p className="text-gray-100 text-sm">Ab tnzr ab sevraqf</p>
-        <p className="text-gray-100 text-sm">He/him</p>
+        <p className="text-gray-100 text-sm whitespace-normal break-words">zxj000hugh@gmail.com</p>
+        <p className="text-gray-100 text-sm whitespace-normal break-words">Ab tnzr ab sevraqf</p>
+        <p className="text-gray-100 text-sm whitespace-normal break-words">He/him</p>
       </section>
 
       {/* 社交媒体图标 */}
-      <div className="flex gap-4 mt-4">
+      <div className="hidden md:flex gap-4 mt-4">
         <a href="mailto:zxj000hugh@gmail.com" target="_blank" rel="noopener noreferrer">
           <i className="nes-icon gmail"></i>
         </a>
-
-
-        <a href="https://www.instagram.com/zhuangxiaojian9/"><i className="nes-icon instagram" ></i></a>
+        <a href="https://www.instagram.com/zhuangxiaojian9/"><i className="nes-icon instagram"></i></a>
         <a href="https://github.com/pandalow"><i className="nes-icon github"></i></a>
         <a href="https://www.linkedin.com/in/xjzhuang000john/"><i className="nes-icon linkedin"></i></a>
       </div>
@@ -43,7 +41,7 @@ function Sidebar({ setCurrentPage }) {
               onClick={() => setCurrentPage('chatbot')}
               className="w-1/2 py-2 px-4 rounded-lg bg-gray-200 hover:bg-gray-600 transition"
             >
-              Chat Me
+              Chat with <menu></menu>
             </button>
           </li>
           <li>
@@ -54,14 +52,14 @@ function Sidebar({ setCurrentPage }) {
               About Me
             </button>
           </li>
-          {/* <li>
+          <li>
             <button
               onClick={() => setCurrentPage('portfolio')}
-              className="w-full py-2 px-4 rounded-lg bg-gray-700 hover:bg-gray-600 transition"
+              className="w-1/2 py-2 px-4 rounded-lg bg-gray-200 hover:bg-gray-600 transition"
             >
               Portfolio
             </button>
-          </li> */}
+          </li>
         </ul>
       </nav>
     </div>
