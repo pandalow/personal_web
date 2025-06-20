@@ -1,4 +1,20 @@
 [
+
+  {
+    "title":"Exif Lacotse",
+    "description":["A lightweight and beginner-friendly tool to extract and remove EXIF metadata from images — with a visual twist! This project is designed as a hands-on way to get familiar with Gradio interfaces and integrating map-based visualizations via Folium."],
+    "websites":"https://huggingface.co/spaces/pandalow/exif_lactose",
+    "githubLink":"https://github.com/pandalow/exif_lactose",
+    "languages":"Python",
+    "Framework":"Gradio,forlium,piexif",
+    "image":"exif.png"
+  },
+  {"title":"Chatbot",
+  "description":["A FastAPI-based RAG (Retrieval-Augmented Generation) chatbot that answers user queries based on information extracted from a local resume.json."],
+    "githubLink":"https://github.com/pandalow/chatbot",
+    "languages":"Python",
+    "Framework":"langchain, langgraph, openai, groq"
+  },
     {
       "title": "Course Hunter",
      "description": [
